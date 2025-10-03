@@ -17,7 +17,6 @@
 .article img {
     display: block;
     max-width: 100%;
-    height: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -30,7 +29,7 @@
     font-family: var(--main-font);
     font-weight: 800;
     line-height: 1.3;
-    font-size: clamp(20px, 3vw, 40px);
+    font-size: clamp(25px, 3vw, 40px);
 
 
 }
@@ -46,7 +45,7 @@
 
 .article p {
     font-family: var(--main-font);
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: clamp(16px, 2vw, 18px);
     margin: 0 1rem;
     margin-top: -0.6rem
 }
@@ -83,7 +82,7 @@
     font-family: var(--main-font);
     font-weight: 800;
     color: black;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.21);
 
 
