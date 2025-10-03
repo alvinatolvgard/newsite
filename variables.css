@@ -1,0 +1,14 @@
+:root {
+    --main-color: #5E88D2;
+    --secondary-color: #DB0000;
+    --main-hover-color: #3A71D1;
+    --main-line-color: rgba(0, 0, 0, 0.174);
+    --main-font: "vazirmatn", sans-serif;
+
+}
+
+body {
+    background: rgba(0, 0, 0, 0.057);
+    margin: 0;
+    padding: 0;
+}

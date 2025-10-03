@@ -1,0 +1,326 @@
+
+@media (max-width: 768px) {
+
+    /*links*/
+
+    #mobile-link {
+
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        font-family: var(--main-font);
+        margin-left: auto;
+    }
+
+    #mobile-link a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .desktop-nav ul {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        justify-content: flex-start;
+        padding: 0 1rem 0 0;
+        background: var(--main-color);
+        position: relative;
+        overflow: visible;
+    }
+
+    .mobile-nav label {
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        padding: 0;
+    }
+
+    .desktop-nav .search-icon {
+        display: none;
+    }
+
+    .mobile-nav .search-icon {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+        justify-self: center;
+        align-self: center;
+        padding: 1rem;
+        margin-right: 0.5rem;
+        z-index: 100;
+    }
+
+    ul#mobile-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        z-index: 1000;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul#mobile-menu a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        list-style: none;
+        padding: 1rem;
+        font-family: var(--main-font);
+
+    }
+
+    #hamburger-menu:checked~#mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .icon-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .search-icon,
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-nav .search-icon {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-nav .hamburger {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-icon svg {
+        width: 20px;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    #search-toggle-mobile:checked~.search-popup {
+        display: block;
+    }
+
+    .mobile-nav .search-popup {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .search-function-mobile {
+    width: 100%;
+    position: relative;
+    margin: 0.5rem 0;
+}
+
+.search-popup-mobile {
+    display: none;
+    position: fixed;
+    top: 145px;
+    left: 0;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#search-toggle-mobile:checked ~ .search-popup-mobile {
+    display: block;
+}
+ .placeholder-mobile {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .placeholder-mobile input {
+        flex: 1;
+        border: none;
+        outline: none;
+        background-color: white;
+    }
+
+    .placeholder-mobile button {
+        padding: 0.3rem;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .search-icon-mobile {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        justify-content: flex-end;
+        margin-right: 0.5rem;
+    }
+
+    .search-placeholder-mobile {
+        font-family: var(--main-font);
+        font-weight: bold;
+    }
+
+    .close-logo-mobile {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    
+    }
+
+    /*buttons*/
+
+    #first-btn {
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+        margin: 1rem;
+    }
+
+    #second-btn {
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    .layout {
+        grid-template-columns: 1fr
+    }
+
+
+    .sidebar {
+        max-width: 100%;
+        order: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        gap: 1rem;
+
+    }
+
+    .sidebar p {
+        grid-column: 1 /-1;
+
+    }
+
+    #social-media-footer ul {
+        display: flex;
+        gap: 3rem;
+    }
+
+    #social-media-footer svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    #social-media-footer p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    .sidebar {
+        max-width: 100%;
+        max-height: 100%;
+        order: 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: start;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .sidebar-articles a {
+        max-width: 100%;
+        justify-content: flex-start;
+        padding: 0.5rem 1rem;
+    }
+
+    .sidebar-articles img {
+        margin-bottom: 0.5rem;
+    }
+
+    .sidebar-articles {
+        margin-left: 2rem;
+    }
+
+
+    .sidebar p {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+#social-media-footer ul {
+    display: flex;
+    gap: 2rem;
+}
+
+#social-media-footer p {
+    font-size: 15px;
+}
+
+#social-media-footer svg {
+    width: 40px;
+    height: 40px;
+}
+}
+
+@media (max-width: 425px) {
+    .nav-btn {
+        display: none;
+    }
+
+    #account-mobile {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    #account-btn-mobile {
+        background-color: var(--main-color);
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #account-btn-mobile:active {
+        background-color: var(--main-hover-color);
+    }
+}

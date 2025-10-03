@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="breaking.css">
+    <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="@media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Vazirmatn:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="desktop-nav">
+            <div id="logo">
+                <p>NEWSITE</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Nyheter</a>
+                </li>
+                <li>
+                    <a href="#">Lokalt</a>
+                </li>
+                <li>
+                    <a href="#">Sport</a>
+                </li>
+            </ul>
+            <div class="search-function">
+                <input type="checkbox" id="search-toggle-desktop" hidden>
+                <label for="search-toggle-desktop" class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px"
+                        fill="#1f1f1f">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg>
+                </label>
+
+
+                <div class="search-popup">
+                    <form action="/search" method="get">
+                        <div class=search-placeholder>
+                            <p>Sök</p>
+                            <label for="search-toggle-desktop" class="close-logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#1f1f1f">
+                                    <path
+                                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                </svg>
+                            </label>
+                            <div class="placeholder">
+                                <input type="search" name="search" placeholder="Sök på newsite">
+                                <button type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="#5E88D2">
+                                        <path
+                                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <button id="first-btn">Prenumerera</button>
+                <button id="second-btn">Logga in</button>
+            </div>
+            <div id="account-mobile">
+                <button id="account-btn-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                        fill="#ffffff">
+                        <path
+                            d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <nav class="mobile-nav">
+            <ul id="mobile-link">
+                <li>
+                    <a href="#">Nyheter</a>
+                </li>
+                <li>
+                    <a href="#">Lokalt</a>
+                </li>
+                <li>
+                    <a href="#">Sport</a>
+                </li>
+            </ul>
+
+            <div class="icon-wrapper">
+
+                <div class="search-function-mobile">
+
+                    <input type="checkbox" id="search-toggle-mobile" hidden>
+                    <label for="search-toggle-mobile" class="search-icon-mobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#ffffff">
+                            <path
+                                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                        </svg>
+                    </label>
+                    <div class="search-popup-mobile">
+                        <form action="/search" method="get">
+                            <div class=search-placeholder-mobile>
+                                <p>Sök</p>
+                                <label for="search-toggle-mobile" class="close-logo-mobile">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="#1f1f1f">
+                                        <path
+                                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                    </svg>
+                                </label>
+                                <div class="placeholder-mobile">
+                                    <input type="search" name="search" placeholder="Sök på newsite">
+                                    <button type="submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#5E88D2">
+                                            <path
+                                                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <input type="checkbox" id="hamburger-menu" hidden>
+                <label for="hamburger-menu" class="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#ffffff">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </label>
+
+                <ul id="mobile-menu">
+                    <li>
+                        <a href="#">Nyheter</a>
+                    </li>
+                    <li>
+                        <a href="#">Lokalt</a>
+                    </li>
+                    <li>
+                        <a href="#">Sport</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <div id="right-now-boxes">
+        <div class="right-now">
+            <span>JUST NU</span>
+            <a href="#">Personlig assistent somnade - åtalas för vållande till annans död</a>
+        </div>
+        <div class="right-now">
+            <span>JUST NU</span>
+            <a href="#">Personlig assistent somnade - åtalas för vållande till annans död</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="layout">
+
+            <div id="all-articles">
+                <div class="article">
+                    <article>
+                        <a href="#">
+                            <img src="artikel 1.avif" width="800px" alt="artikelbild">
+                            <div class="text-content">
+                                <span>Liverapport • </span>Försvarsministern: <br>"Dialog med Ukraina om Gripen"
+                            </div>
+                        </a>
+                        <p>Uppgifter i ukrainsk media: Stridsflygplanet ska skickas från Sverige</p>
+                </div>
+
+                </article>
+
+                <div class="article">
+                    <article>
+                        <a href="#">
+                            <img src="artikel 2.webp" width="800px" alt="artikelbild">
+                            <div class="text-content">
+                                "Kommer inte tveka att skjuta ner drönare"
+                            </div>
+                        </a>
+                        <p>Kristersson inför toppmötet: Bra att EU sammarbetar - men ha inte för höga förhoppningar.</p>
+                    </article>
+                </div>
+
+                <div class="article">
+                    <article>
+                        <a href="#">
+                            <img src="artikel 3.avif" width="800px" alt="artikelbild">
+                            <div class="text-content">
+                                <span>Granskning • </span> Kritiserade konsulter bakom fallet med Söderhamnsbarnen
+                            </div>
+                        </a>
+                        <p>Kurator slog larm • Slår ifrån sig kritiken</p>
+                    </article>
+                </div>
+
+                <div class="article">
+                    <article>
+                        <a href="#">
+                            <img src="artikel 4.avif" width="800px" alt="artikelbild">
+                            <div class="text-content">
+                                S-kritiken: "Alla varningsklockor borde ringt i regeringskansliet"
+                            </div>
+                        </a>
+                        <p>Sverige ska ha gett somalia bistånd i utbyte mot att ta emot tvångsutvisade •
+                            Krismöte på ambassaden - Dousa (M) kallas till utskottet</p>
+                    </article>
+                </div>
+
+                <div class="article">
+                    <article>
+                        <a href="#">
+                            <img src="artikel 5.avif" width="800px" alt="artikelbild">
+                            <div class="text-content">
+                                Flashbacks vd Jan Axelsson frias - advokaten: "Naturligtvis nöjd"
+                            </div>
+                        </a>
+                        <p>Åtalades efter att rasistiska inlägg inte raderats tillräckligt snabbt</p>
+                    </article>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <p>MEST LÄST</p>
+                <div class="sidebar-articles">
+                    <article>
+                        <a href="#">
+                            <div class="text-content-sidebar">
+                                <span>NYHETER</span> <br>
+                                Lyxkrogen stänger efter listeriautbrott - tre sepsisfall
+                            </div>
+                            <img src="sidebar 1.avif" alt="sidebar artikel">
+                        </a>
+                </div>
+                </article>
+
+                <div class="sidebar-articles">
+                    <article>
+                        <a href="#">
+                            <div class="text-content-sidebar">
+                                <span>NYHETER</span> <br>
+                                Tiden rinner ut - då stänger USA: "Gisslandrama"
+                            </div>
+                            <img src="sidebar 2.avif" alt="sidebar artikel">
+                        </a>
+                </div>
+                </article>
+
+                <div class="sidebar-articles">
+                    <article>
+                        <a href="#">
+                            <div class="text-content-sidebar">
+                                <span>NYHETER</span> <br>
+                                Man död efter bråk i Malmö - misstänkt mord
+                            </div>
+                            <img src="sidebar 3.avif" alt="sidebar artikel">
+                        </a>
+                </div>
+                </article>
+
+                <div class="sidebar-articles">
+                    <article>
+                        <a href="#">
+                            <div class="text-content-sidebar">
+                                <span>NYHETER</span> <br>
+                                Lyxkrögaren: "Lider fruktansvärt med de drabbade"
+                            </div>
+                            <img src="sidebar 4.avif" alt="sidebar artikel">
+                        </a>
+                </div>
+                </article>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div id="social-media-footer">
+            <p>Följ oss på sociala medier</p>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <svg fill="#ffffff" viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z">
+                                </path>
+                                <path
+                                    d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/?locale=sv_SE">
+                        <svg fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/">
+                        <svg fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M11.919 24.94c-2.548 0-4.921-.747-6.919-2.032a9.049 9.049 0 0 0 6.681-1.867 4.512 4.512 0 0 1-4.215-3.137c.276.054.559.082.848.082.412 0 .812-.056 1.193-.156a4.519 4.519 0 0 1-3.622-4.425v-.059a4.478 4.478 0 0 0 2.042.564 4.507 4.507 0 0 1-2.008-3.758c0-.824.225-1.602.612-2.268a12.811 12.811 0 0 0 9.303 4.715 4.517 4.517 0 0 1 7.692-4.115 9.107 9.107 0 0 0 2.866-1.094 4.542 4.542 0 0 1-1.983 2.498 9.08 9.08 0 0 0 2.592-.71 9.283 9.283 0 0 1-2.252 2.337c.008.193.014.388.014.583-.001 5.962-4.542 12.843-12.844 12.842">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/">
+                        <svg fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M24.325 8.309s-2.655-.334-8.357-.334c-5.517 0-8.294.334-8.294.334A2.675 2.675 0 0 0 5 10.984v10.034a2.675 2.675 0 0 0 2.674 2.676s2.582.332 8.294.332c5.709 0 8.357-.332 8.357-.332A2.673 2.673 0 0 0 27 21.018V10.982a2.673 2.673 0 0 0-2.675-2.673zM13.061 19.975V12.03L20.195 16l-7.134 3.975z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
