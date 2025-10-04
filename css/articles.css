@@ -9,6 +9,10 @@
 
 }
 
+#lokalt-sport-layout {
+    margin-top: 3rem;
+}
+
 #all-articles {
     flex: 1;
     margin: 1rem auto;
@@ -41,6 +45,10 @@
 
 .article span {
     color: var(--secondary-color);
+}
+
+.article p span {
+    color: var(--main-color);
 }
 
 .article p {
@@ -112,6 +120,10 @@
     font-size: 16px;
     font-weight: 500;
 
+}
+
+.sport-span span {
+    color: var(--main-color);
 }
 
 .text-content-sidebar {
