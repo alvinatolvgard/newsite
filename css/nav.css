@@ -40,7 +40,7 @@
     font-size: 20px;
 }
 
-.desktop-nav ul a:after {
+.desktop-nav ul a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -52,6 +52,10 @@
 }
 
 .desktop-nav ul a:hover::after {
+    width: 100%;
+}
+
+.desktop-nav ul a.active::after {
     width: 100%;
 }
 
