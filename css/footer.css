@@ -1,7 +1,6 @@
-
 #social-media-footer {
     background-color: var(--main-color);
-    
+
 }
 
 #social-media-footer li {
@@ -10,11 +9,11 @@
 }
 
 #social-media-footer ul {
-  display: flex;
-  gap: 4rem;
-  justify-content: center;
-  margin: 0;
-  padding: 0 0 2rem 0;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 2rem 0;
 }
 
 #social-media-footer p {
